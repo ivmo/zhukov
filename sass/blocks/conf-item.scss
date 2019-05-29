@@ -1,0 +1,35 @@
+.conf-item {
+  margin-right: 60px;
+  margin-bottom: 16px;
+
+  @media #{$desktop-width-sm} {
+    margin-right: 40px;
+  }
+
+  @media #{$mobile-width--sm} {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &:last-child {
+    margin-right: 0;
+
+    @media #{$mobile-width--sm} {
+      margin-right: auto;
+    }
+  }
+}
+
+.conf-item__pic {
+  margin-bottom: 27px;
+  line-height: 0;
+
+  @media #{$tablet-width--sm} {
+    margin-bottom: 12px;
+  }
+
+  img {
+    width: 100%;
+  }
+}

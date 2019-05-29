@@ -1,0 +1,147 @@
+.slider {
+
+}
+
+.slider--top {
+  margin-bottom: 40px;
+
+  .slider__item a {
+    display: block;
+    cursor: pointer;
+    position: relative;
+
+    &:after {
+      content: '';
+      opacity: 0;
+      display: block;
+      position: absolute;
+      transition: all 0.4s;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $color-primary--opacity url("../img/zoom.jpg") no-repeat;
+      background-position: center;
+      z-index: 3;
+  }
+
+    &:hover {
+
+      &:after {
+        opacity: 1;
+      }
+  }
+  img {
+    width: 100%;
+  }
+}
+}
+
+.slider--books {
+  margin-top: 36px;
+  margin-bottom: 60px;
+
+  @media #{$tablet-width--xs} {
+    margin-top: 20px;
+  }
+
+  .slider-item {
+    margin: 0 13px;
+  }
+
+  .slider-item__pic {
+    margin-bottom: 17px;
+    box-shadow: 0 10px -10px 15px #e8e8e8;
+
+    img {
+      max-width: 100%;
+    }
+  }
+  .slider-item__title {
+    font-size: $title-font--md;
+    line-height: $line--md;
+    color: $text-black;
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Oswald', Arial, sans-serif;
+  }
+  .slick-next {
+
+    @media #{$mobile-width--md} {
+      right: -8px;
+    }
+  }
+    .slick-prev {
+
+      @media #{$mobile-width--md} {
+        left: -8px;
+      }
+  }
+
+}
+
+.slider--footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 48px;
+
+  .slick-track {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .slider-item {
+    position: relative;
+    max-width: 140px;
+    padding-right: 35px;
+    flex-shrink: 0;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: #ddd;
+    }
+
+  }
+
+  .slider-item__pic {
+    margin-bottom: 25px;
+    line-height: 0;
+  }
+
+  .slider-item__title {
+    position: relative;
+    text-align: center;
+    color: $text-black;
+    font-size: $font--large;
+    line-height: $line--sm;
+    font-family: 'Oswald';
+    font-weight: 700;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 5px;
+      height: 5px;
+      background: #b1b1b1;
+      border-radius: 50%;
+    }
+  }
+
+}
+
+.slider-free {
+	// overflow-x: auto;
+  // overflow-y: hidden;
+}

@@ -1,0 +1,9 @@
+.conf {
+  display: flex;
+  margin-bottom: 40px;
+
+  @media #{$mobile-width--sm} {
+    margin-bottom: 26px;
+    display: block;
+  }
+}

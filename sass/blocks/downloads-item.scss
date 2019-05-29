@@ -1,0 +1,47 @@
+.downloads-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 36px;
+  text-decoration: none;
+  color: $text-black;
+
+  &:hover {
+
+    .downloads-item__title {
+      color: $color-primary;
+    }
+    .downloads-item__pic img {
+      transform: translateY(-5px);
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.downloads-item__pic {
+  margin-right: 10px;
+  line-height: 0;
+
+  img {
+    max-width: 100%;
+    transition: all 0.4s;
+  }
+}
+
+.downloads-item__title {
+  max-width: 250px;
+  margin-bottom: 12px;
+  font-size: $title-font--md;
+  line-height: $line--md;
+  text-transform: uppercase;
+  font-family: 'Oswald', Arial, sans-serif;
+  transition: all 0.2s;
+}
+
+.downloads-item__subtitle {
+  font-size: $font--sm;
+  line-height: $line--md;
+  color: $text-black;
+}

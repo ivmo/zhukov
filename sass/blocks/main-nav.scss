@@ -1,0 +1,44 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 30px;
+  padding-bottom: 12px;
+  background: $bg-black;
+  box-sizing: border-box;
+
+  @media #{$tablet-width--xs} {
+		padding: 30px 20px 12px;
+	}
+}
+
+.main-nav--desktop {
+
+  @media #{$mobile-width--md} {
+		display: none;
+	}
+}
+
+.main-nav--mobile {
+  width: auto;
+  padding: 30px 15px 12px;
+  z-index: 19 !important;
+
+  .main-nav__title {
+    text-align: center;
+  }
+}
+
+.main-nav__title {
+  // padding: 11px;
+  // background: $color-secondary;
+  color: $text-white;
+  font-size: $font--lg;
+  line-height: $line--md;
+  text-transform: uppercase;
+  font-family: 'ROOM BOLD', Arial, sans-serif;
+
+  img {
+    width: 100%;
+  }
+}

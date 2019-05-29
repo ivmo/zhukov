@@ -1,0 +1,42 @@
+.social-list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.social-list li {
+	padding: 0 7px;
+	box-sizing: content-box;
+}
+
+.social-list li svg {
+	width: 100%;
+}
+.social-list li a {
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+  align-items: center;
+	justify-content: center;
+	width: 17px;
+	fill: $gray-dark;
+	text-align: center;
+  transition: all .2s ease-out;
+}
+.social-list li a span {
+	width: 17px;
+	line-height: 0;
+}
+.social-list li a:hover {
+	fill: $color-primary;
+}

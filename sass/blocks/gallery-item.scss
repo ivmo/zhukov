@@ -1,0 +1,36 @@
+.gallery-item {
+  max-width: 175px;
+  color: $gray;
+
+  @media #{$mobile-width--md} {
+    margin-bottom: 30px !important;
+    text-align: center;
+
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &:hover {
+    color: $color-primary;
+
+    .gallery-item__title {
+      color: $color-primary;
+    }
+  }
+
+  &:nth-child(2) {
+    margin: 0 30px;
+  }
+}
+
+.gallery-item__pic {
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.gallery-item__title {
+  color: $gray;
+}
